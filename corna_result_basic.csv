@@ -1,0 +1,5 @@
+Name,Gender,Age,Body_temperature,Dry_cough,weakness,Breathing_problem,Pain_in_chest,Travel_to_prone_area,losing_sense_of_smell,submitted,basic_result
+priti,Female,25,65,0,1,0,0,0,0,Submit Query,[1]
+Rajat,Male,22,65,0,0,0,0,0,0,Submit Query,[0]
+Yash,Male,22,46,1,1,1,0,0,0,Submit Query,[1]
+Amit,Male,88,33,0,0,0,1,1,0,Submit Query,[1]
