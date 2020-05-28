@@ -7,14 +7,14 @@ from builtins import list
 import os.path
 
 # To save basic modal test record
-if os.path.isfile("corna_result_basic.csv") == False :
-    f= open("corna_result_basic.csv","w+")
+if os.path.isfile("corona_result_basic.csv") == False :
+    f= open("corona_result_basic.csv","w+")
     f.write("Name,Gender,Age,Body_temperature,Dry_cough,weakness,Breathing_problem,Pain_in_chest,Travel_to_prone_area,losing_sense_of_smell,submitted,basic_result\n")
     f.close()
 
 # To save basic+advance modal test record
-if os.path.isfile("corna_result_advance.csv") == False :
-    f= open("corna_result_advance.csv","w+")
+if os.path.isfile("corona_result_advance.csv") == False :
+    f= open("corona_result_advance.csv","w+")
     f.write("Name,Gender,Age,Body_temperature,Dry_cough,weakness,Breathing_problem,Pain_in_chest,Travel_to_prone_area,losing_sense_of_smell,submitted,basic_result,sour_throat,drowziness,diabetes,heart_disease,lung_disease,reduced_immunity,High_Blood_Pressure,Kidney_disease,Submitted,Advance_result\n")
     f.close()
 
@@ -51,7 +51,7 @@ def printlist():
 def write_result(a):
     global list
     if a==0 :
-        f= open("corna_result_basic.csv","a+")    # to write data to basic modal record
+        f= open("corona_result_basic.csv","a+")    # to write data to basic modal record
         for i in range(len(list)):
             f.write(str(list[i]))
             if i== (len(list)-1):
@@ -60,7 +60,7 @@ def write_result(a):
                 f.write(',')
     else :
         
-        f= open("corna_result_advance.csv","a+")   # to write data to advance modal record
+        f= open("corona_result_advance.csv","a+")   # to write data to advance modal record
         for i in range(len(list)):
             f.write(str(list[i]))
             if i== (len(list)-1):
